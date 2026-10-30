@@ -9,6 +9,10 @@ import java.util.List;
 
 public class Task1Store {
 
+    public static void main(String[] args) throws IOException {
+        run(Path.of("files"));
+    }
+
     public static void run(Path baseDir) throws IOException {
         Path dir = baseDir.resolve("task1");
         Files.createDirectories(dir);

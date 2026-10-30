@@ -10,6 +10,10 @@ import java.util.Random;
 
 public class Task5Count {
 
+    public static void main(String[] args) throws IOException {
+        run(Path.of("files"));
+    }
+
     public static void run(Path baseDir) throws IOException {
         Path dir = baseDir.resolve("task5");
         Files.createDirectories(dir);

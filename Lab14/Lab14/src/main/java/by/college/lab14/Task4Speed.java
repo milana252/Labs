@@ -11,6 +11,10 @@ import java.util.Scanner;
 
 public class Task4Speed {
 
+    public static void main(String[] args) throws IOException {
+        run(Path.of("files"), new Scanner(System.in));
+    }
+
     public static void run(Path baseDir, Scanner scanner) throws IOException {
         Path dir = baseDir.resolve("task4");
         Files.createDirectories(dir);
